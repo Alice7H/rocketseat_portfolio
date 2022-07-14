@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img alt="Portfolio" title="Portfolio" src="./assets/images/portfolio.png" />
+</h1>
+
 ## Portfolio
 
 **Requisitos para o desafio:**
