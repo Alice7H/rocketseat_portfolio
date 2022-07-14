@@ -1,0 +1,78 @@
+.my-projects .card{
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.my-projects h2{
+  align-self: flex-start;
+}
+.my-projects a{
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.card.project{
+  flex-direction: column;
+}
+.projects{
+  display: block;
+  width: 100%;
+}
+.project{
+  align-items: flex-start;
+  padding: 40px;
+  cursor: pointer;
+}
+.project .title{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.project .title span{
+  margin-left: 10px;
+}
+.project .description{
+  margin-bottom: 20px;
+}
+.project .footer {
+  display: flex; 
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.project .footer .left{
+  display: flex;
+  gap: 20px;
+}
+.project .footer .left svg{
+  vertical-align: bottom;
+}
+.project .footer .right{
+  display: flex;
+  gap: 5px;
+}
+
+.project.hidden{
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  .projects{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+  }
+  .projects .btn {
+    cursor: pointer;
+  }
+  .project{
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,93 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #D6D2E4;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+  --bg-toggle-on: #2196F3;
+  --bg-toggle-off: #727272;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+.card{
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+
+  padding: 40px;
+  margin-bottom: 20px;
+}
+a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#technologies h2,
+#experiences h2,
+#education h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+#experiences .container,
+#education .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#experiences span,
+#education span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+#experiences .time,
+#experiences .description,
+#education .time,
+#education .description{
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+#experiences .time,
+#education .time{
+  font-weight: 300;
+}
+#experiences .description,
+#education .description{
+  font-weight: 400;
+}
+
+@media (min-width: 1080px){
+  body{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+  }
+  #profile,
+  #links,
+  #technologies,
+  #experiences,
+  #education {
+    width: 348px;
+  }
+}

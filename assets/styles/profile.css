@@ -1,0 +1,17 @@
+#profile h1{
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 29px;
+}
+#profile p{
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+}
+#profile img{
+  width: 128px;
+  height: 128px;
+  border: 2px solid #00FF00;
+  border-radius: 128px;
+  box-sizing: border-box;
+}

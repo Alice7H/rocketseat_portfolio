@@ -1,0 +1,11 @@
+#links a, #links p{
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+#links a:last-child, #links p:last-child{
+  margin-bottom: 0;
+}
+#links span {
+  display: flex;
+  gap: 20px;
+}
